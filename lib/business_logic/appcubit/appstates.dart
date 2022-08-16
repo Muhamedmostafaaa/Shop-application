@@ -16,3 +16,14 @@ class AppFavoritesDataErorrState extends Appstates{}
 class AppFavAddOrDeleteSucessStata extends Appstates{}
 class AppFavAddOrDeleteErorrState extends Appstates{}
 class AppChangeFavState extends Appstates{}
+class AppChangeProductState extends Appstates{}
+class AppGetProfileSucessState extends Appstates{}
+class AppGetProfileErrorState extends Appstates{}
+class AppLogoutSucessState extends Appstates{}
+class AppLogoutErroeState extends Appstates{}
+class AppRegisterSucessState extends Appstates{}
+class AppRegisterErrorState extends Appstates{}
+class AppUpdateSucessState extends Appstates{}
+class AppUpdateErrorState extends Appstates{}
+class AppUpdateLoadState extends Appstates{}
+

@@ -60,15 +60,16 @@ class _ProductScreenState extends State<ProductScreen> {
           SizedBox(
             height: 5,
           ),
-          Container(height: 100,
+          Container(margin: EdgeInsets.symmetric(horizontal: 10),
+              height: 150,
               child: ListView.separated(scrollDirection:Axis.horizontal,
                   itemBuilder: (context,index){
-                return Container(height: 100,width: 100,
+                return Container(height: 150,width: 100,
                   child: Stack(alignment: AlignmentDirectional.bottomStart,
                     children: [
                       Image(
                         image: NetworkImage(categoriesModel?.data?.data[index].image.toString()??''),
-                        height: 80,
+                        height: 150,
 
                       ),
                       true?Container(width:100,
@@ -131,9 +132,13 @@ class _ProductScreenState extends State<ProductScreen> {
                     Spacer(),
                     IconButton(onPressed: (){
 
-                      cubit.addOrDelteToFavorite(model?.id??0);
 
-                    }, icon:CircleAvatar(radius: 50,backgroundColor:favorite?AppColors.primary:Colors.grey,
+                      cubit.addOrDelteToFavorite(model?.id??0);
+                      //cubit.getFavoritesData();
+
+
+
+                    }, icon:CircleAvatar(radius: 50,backgroundColor:cubit.favorites[model?.id]??false ?AppColors.primary:Colors.grey,
                         child: Icon(Icons.favorite_border,size: 20,color: Colors.white,)))
                   ],
                 )

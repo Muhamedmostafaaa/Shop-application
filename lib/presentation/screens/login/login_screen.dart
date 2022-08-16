@@ -8,6 +8,8 @@ import 'package:shop_app/presentation/screens/home/home_screen.dart';
 import 'package:shop_app/presentation/shared_widgets/textform_design.dart';
 import 'package:shop_app/presentation/shared_widgets/toast.dart';
 
+import '../register/register_screen.dart';
+
 class LoginScreen extends StatelessWidget {
   static const String ROUTE_NAME = 'loginscreen';
   TextEditingController emailcontrooler = TextEditingController();
@@ -114,17 +116,21 @@ class LoginScreen extends StatelessWidget {
                         height: 15,
                       ),
                       Center(
-                        child: RichText(
-                          text: TextSpan(
-                              text: 'Dont have account? ',
-                              style:
-                                  TextStyle(fontSize: 16, color: Colors.black),
-                              children: [
-                                TextSpan(
-                                    text: 'Register',
-                                    style: TextStyle(
-                                        fontSize: 16, color: Colors.blue))
-                              ]),
+                        child: InkWell(onTap: (){
+                          Navigator.pushNamed(context, RegisterScreen.ROUTE_NAME);
+                        },
+                          child: RichText(
+                            text: TextSpan(
+                                text: 'Dont have account? ',
+                                style:
+                                    TextStyle(fontSize: 16, color: Colors.black),
+                                children: [
+                                  TextSpan(
+                                      text: 'Register',
+                                      style: TextStyle(
+                                          fontSize: 16, color: Colors.blue))
+                                ]),
+                          ),
                         ),
                       )
                     ],

@@ -18,8 +18,9 @@ class CacheHelper{
 
   }else return await sharedPreferences.setDouble(key, value);
  }
- Future<bool> removeData({required String key})async{
+ static Future<bool> removeData({required String key})async{
    return await sharedPreferences.remove(key);
  }
+
 
 }

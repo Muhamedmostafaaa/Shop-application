@@ -29,4 +29,12 @@ class DioHelper{
     };
      return await dio.post(path,data:data,queryParameters:query  );
   }
+  static Future<Response> putData({var query,required var data,required String path,String lang:'en',String? token})async{
+    dio.options.headers={
+      'lang':lang,
+      'Authorization':token,
+      'Content-Type':'application/json'
+    };
+    return await dio.put(path,data: data,queryParameters: query);
+  }
 }

@@ -14,7 +14,7 @@ class FavoritesScreen extends StatelessWidget{
         var cubit=BlocProvider.of<AppCubit>(context);
         return ConditionalBuilder(
           condition: cubit.favoritesModel!=null,
-          builder:(context)=> ListView.separated(physics: BouncingScrollPhysics(),
+          builder:(context)=>cubit.favoritesModel?.data?.data.length!=0? ListView.separated(physics: BouncingScrollPhysics(),
               itemBuilder:(context,index){
                 return Padding(
                   padding: const EdgeInsets.all(20.0),
@@ -45,9 +45,9 @@ class FavoritesScreen extends StatelessWidget{
                                   Spacer(),
                                   IconButton(onPressed: (){
                                     cubit.addOrDelteToFavorite(cubit.favoritesModel?.data?.data[index].product?.id);
-                                    cubit.getFavoritesData();
-                                  }, icon:CircleAvatar(radius: 50,
-                                      child: Icon(Icons.favorite_border,size: 20,)))
+                                    //cubit.getFavoritesData();
+                                  }, icon:CircleAvatar(radius: 50,backgroundColor: cubit.favorites[cubit.favoritesModel?.data?.data[index].product?.id]??false?AppColors.primary:Colors.grey,
+                                      child: Icon(Icons.favorite_border,size: 20,color: Colors.white,)))
                                 ],
                               )
 
@@ -66,7 +66,7 @@ class FavoritesScreen extends StatelessWidget{
                 return Divider(
                   color: Colors.grey,
                 );
-              }, itemCount:cubit.favoritesModel?.data?.data.length??0,),
+              }, itemCount:cubit.favoritesModel?.data?.data.length??0,):Center(child: Text('NO fAVORITES',style: TextStyle(fontSize: 24,color: AppColors.primary),)),
           fallback: (context)=>Center(child: CircularProgressIndicator(),),
         );
       },

@@ -11,6 +11,8 @@ import 'package:shop_app/data/remote/dio_helper.dart';
 import 'package:shop_app/presentation/screens/home/home_screen.dart';
 import 'package:shop_app/presentation/screens/login/login_screen.dart';
 import 'package:shop_app/presentation/screens/onboard/onboard_screen.dart';
+import 'package:shop_app/presentation/screens/register/register_screen.dart';
+import 'package:shop_app/presentation/screens/search/search_screen.dart';
 
 import 'business_logic/bloc_observer.dart';
 import 'constants/constants.dart';
@@ -52,10 +54,7 @@ class myapp extends StatelessWidget{
   myapp(this.boarding,this.screentoshow);
   @override
   Widget build(BuildContext context) {
-   return BlocProvider(create: (context)=> AppCubit()..getHomeData()..getCategoriesData()..getFavoritesData(),
-     child: BlocConsumer<AppCubit,Appstates>(
-       listener: (context,state){},
-       builder: (context,state){
+
          return MaterialApp(
 
            theme: ThemeData(
@@ -66,13 +65,15 @@ class myapp extends StatelessWidget{
            home:screentoshow()
            ,routes: {
            LoginScreen.ROUTE_NAME:(context)=>LoginScreen(),
-           HomeScreen.ROUTE_NAME:(context)=>HomeScreen()
+           HomeScreen.ROUTE_NAME:(context)=>HomeScreen(),
+           RegisterScreen.ROUTE_NAME:(context)=>RegisterScreen(),
+           SearchScreen.ROUTE_NAME:(context)=>SearchScreen()
          },
          );
-       },
 
-     ),
-   );
+
+
+
   }
 
 
