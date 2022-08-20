@@ -20,10 +20,31 @@ Online shop app that have different categroies of products so the use can choose
 
 ## Screenshots
 
-![App Screenshot](https://i.postimg.cc/qvdZ6pm1/2022-08-20-12.png) <&nbsp; &nbsp; &nbsp;  &nbsp; ![App Screenshot]()
 
-![App Screenshot](https://i.postimg.cc/C1YbLjL5/2022-08-18-11.pngg)<&nbsp; ![App Screenshot](https://i.postimg.cc/BnH8LXzK/2022-08-18-12.png)
+## Screenshots
+
+![App Screenshot](https://i.postimg.cc/7YVmhdRz/2022-08-20-1.png)
+
+![App Screenshot](https://i.postimg.cc/jdFnMhw9/2022-08-20-2.png)
+
+![App Screenshot](https://i.postimg.cc/qvdZ6pm1/2022-08-20-12.png) 
+
+  ![App Screenshot](https://i.postimg.cc/BbSjt04z/2022-08-20-3.png)
+
+  ![App Screenshot](https://i.postimg.cc/G2hBmRc5/2022-08-20-5.png)
+
+  ![App Screenshot](https://i.postimg.cc/hvMRPFtp/2022-08-20-6.png)
+
+  ![App Screenshot](https://i.postimg.cc/sXQJg5f8/2022-08-20-8.png)
+  
+  ![App Screenshot](https://i.postimg.cc/CLPdmXsG/2022-08-20-9.png)
+  
+  ![App Screenshot](https://i.postimg.cc/pdtvZJ4Q/2022-08-20-10.png)
+  
+  ![App Screenshot](https://i.postimg.cc/qBF9wGCt/2022-08-20-11.png)
 
   
+
+
   
 
