@@ -1,16 +1,29 @@
-# shop_app
 
-A new Flutter project.
+# Salla Application
 
-## Getting Started
+Online shop app that have different categroies of products so the use can choose what he want from it 
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Packages
+ ![alt text](https://i.postimg.cc/hvcHmx1P/2022-08-20-13.png)
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- On boarding Screens
+- Login and Register Screen
+- Bottom Navigation bar to allow user to navigate between screens
+- Home screen to show all products
+- Categories screen 
+- Favorites screen that user can add his favorite products
+- Settings screen that user can update his profile or logout
+- Search screen 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Screenshots
+
+![App Screenshot](https://i.postimg.cc/qvdZ6pm1/2022-08-20-12.png) <&nbsp; &nbsp; &nbsp;  &nbsp; ![App Screenshot](https://i.postimg.cc/85HPdvd7/2022-08-18-11.png)
+
+![App Screenshot](https://i.postimg.cc/C1YbLjL5/2022-08-18-11.pngg)<&nbsp; ![App Screenshot](https://i.postimg.cc/BnH8LXzK/2022-08-18-12.png)
+
+  
+  
+
