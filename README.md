@@ -23,9 +23,7 @@ Online shop app that have different categroies of products so the use can choose
 
 ## Screenshots
 
-![App Screenshot](https://i.postimg.cc/7YVmhdRz/2022-08-20-1.png)
-
-![App Screenshot](https://i.postimg.cc/jdFnMhw9/2022-08-20-2.png)
+![App Screenshot](https://i.postimg.cc/7YVmhdRz/2022-08-20-1.png) Spacebar ![App Screenshot](https://i.postimg.cc/jdFnMhw9/2022-08-20-2.png)
 
 ![App Screenshot](https://i.postimg.cc/qvdZ6pm1/2022-08-20-12.png) 
 
